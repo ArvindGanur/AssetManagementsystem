@@ -1,0 +1,117 @@
+﻿@model AssetManagementSystemFidrox.Models.ViewModels.AssetViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<br />
+
+<h2 class="text-info">Add New Asset Entry</h2>
+<form method="post" action="Create">
+    <div class="form-group row">
+
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Emp_Id"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Emp_Id" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Emp_Name"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Emp_Name" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Emp_Designation"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Emp_Designation" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for=" AssetIssueDetails.Fdx_Emp_EmailId"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Emp_EmailId" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Emp_wrk_loc"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for=" AssetIssueDetails.Fdx_Emp_wrk_loc" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Emp_Recived_item"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Emp_Recived_item" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Emp_Acknowledge"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Emp_Acknowledge" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Emp_Replace_Item"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Emp_Replace_Item" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Asset_no"></label>
+        </div>
+        <div class="col-2">
+            @*<select asp-for="AssetIssueDetails.Fdx_Asset_no" asp-items="Model.CselectListItem(Model.AssetDetails)" class="form-control"></select>*@
+            <input asp-for="AssetIssueDetails.Fdx_Asset_no" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Asset_Model_name"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Asset_Model_name" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Asset_issued_dt"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Asset_issued_dt" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Asset_New_Old"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Asset_New_Old" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Asset_return_dt"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Asset_return_dt" class="form-group" />
+        </div>
+
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Asset_Status"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Asset_Status" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AssetIssueDetails.Fdx_Asset_Remarks"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AssetIssueDetails.Fdx_Asset_Remarks" class="form-group" />
+        </div>
+
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Create" />
+            <a asp-controller="Issue" asp-action="Index" class="btn btn-success">Back</a>
+        </div>
+
+    </div>
+</form>
+
+

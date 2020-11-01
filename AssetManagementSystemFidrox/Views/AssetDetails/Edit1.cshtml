@@ -1,0 +1,127 @@
+﻿@model AssetManagementSystemFidrox.Models.AssetDetails
+
+@{
+    ViewData["Title"] = "Edit1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit1</h1>
+
+<h4>AssetDetails</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit1">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AssetId" />
+            <div class="form-group">
+                <label asp-for="Asset_No" class="control-label"></label>
+                <input asp-for="Asset_No" class="form-control" />
+                <span asp-validation-for="Asset_No" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_name" class="control-label"></label>
+                <input asp-for="Asset_name" class="form-control" />
+                <span asp-validation-for="Asset_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_model_no" class="control-label"></label>
+                <input asp-for="Asset_model_no" class="form-control" />
+                <span asp-validation-for="Asset_model_no" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AstProcessor" class="control-label"></label>
+                <input asp-for="AstProcessor" class="form-control" />
+                <span asp-validation-for="AstProcessor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_type" class="control-label"></label>
+                <input asp-for="Asset_type" class="form-control" />
+                <span asp-validation-for="Asset_type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_accessories" class="control-label"></label>
+                <input asp-for="Asset_accessories" class="form-control" />
+                <span asp-validation-for="Asset_accessories" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_Ram_GB" class="control-label"></label>
+                <input asp-for="Asset_Ram_GB" class="form-control" />
+                <span asp-validation-for="Asset_Ram_GB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_HardDisk_GB" class="control-label"></label>
+                <input asp-for="Asset_HardDisk_GB" class="form-control" />
+                <span asp-validation-for="Asset_HardDisk_GB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_LicenseKey" class="control-label"></label>
+                <input asp-for="Asset_LicenseKey" class="form-control" />
+                <span asp-validation-for="Asset_LicenseKey" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_Mouse" class="control-label"></label>
+                <input asp-for="Asset_Mouse" class="form-control" />
+                <span asp-validation-for="Asset_Mouse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_Bag_Name" class="control-label"></label>
+                <input asp-for="Asset_Bag_Name" class="form-control" />
+                <span asp-validation-for="Asset_Bag_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_graphics_crd_GB" class="control-label"></label>
+                <input asp-for="Asset_graphics_crd_GB" class="form-control" />
+                <span asp-validation-for="Asset_graphics_crd_GB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_Charger" class="control-label"></label>
+                <input asp-for="Asset_Charger" class="form-control" />
+                <span asp-validation-for="Asset_Charger" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_OS" class="control-label"></label>
+                <input asp-for="Asset_OS" class="form-control" />
+                <span asp-validation-for="Asset_OS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_purchase_dt" class="control-label"></label>
+                <input asp-for="Asset_purchase_dt" class="form-control" />
+                <span asp-validation-for="Asset_purchase_dt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_puch_place" class="control-label"></label>
+                <input asp-for="Asset_puch_place" class="form-control" />
+                <span asp-validation-for="Asset_puch_place" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_price" class="control-label"></label>
+                <input asp-for="Asset_price" class="form-control" />
+                <span asp-validation-for="Asset_price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_purchase_bill_no" class="control-label"></label>
+                <input asp-for="Asset_purchase_bill_no" class="form-control" />
+                <span asp-validation-for="Asset_purchase_bill_no" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_Status" class="control-label"></label>
+                <input asp-for="Asset_Status" class="form-control" />
+                <span asp-validation-for="Asset_Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Asset_Remarks" class="control-label"></label>
+                <input asp-for="Asset_Remarks" class="form-control" />
+                <span asp-validation-for="Asset_Remarks" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

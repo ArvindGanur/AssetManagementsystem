@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace FidroxAssetMS.Extension
+{
+    public static class ReflectionExtension
+    {
+
+        public static string GetPropertyValue<T>(this T Item, string propertyName)
+        {
+            return Item.GetType().GetProperty(propertyName).GetValue(Item, null).ToString();
+        }
+    }
+}

@@ -1,0 +1,152 @@
+﻿@model IEnumerable<AssetManagementSystemFidrox.Models.AssetDetails>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+<style>
+    .style-one a {
+        text-decoration: none;
+        color:white;
+    }
+</style>
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-info">List Of Assets</h2>
+    </div>
+   
+    <div class="col-6 text-right">
+        <a class="btn btn-info" asp-action="Create">Add New Asset</a>
+    </div>
+    <br /><br />
+    <div>
+        <table class="table table-striped border">
+            <tr class="table-info">
+                <th>
+                    @Html.DisplayNameFor(m => m.AssetId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_No)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_type)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_model_no)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.AstProcessor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_OS)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_Ram_GB)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_HardDisk_GB)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_graphics_crd_GB)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_LicenseKey)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_Mouse)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_Bag_Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_Charger)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Asset_Remarks)
+                </th>
+            </tr>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(m => item.AssetId)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_No)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_type)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_model_no)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.AstProcessor)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_OS)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_Ram_GB)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_HardDisk_GB)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_graphics_crd_GB)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_LicenseKey)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_Mouse)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_Bag_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_Charger)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Asset_Remarks)
+                </td>
+
+                <td class="btn btn-primary style-one a" >
+                    @Html.ActionLink("Edit", "Edit", new { AssetId = item.AssetId }) 
+                </td>
+                <td class="btn btn-danger style-one a">
+                    @Html.ActionLink("Delete", "Delete", new { AssetId = item.AssetId }, new { onclick = "return confirm('Are sure wants to delete?');" })
+                </td>
+                @*<partial name="_tableButtonPartial" model="item.AssetId" />*@
+                @*<td class="text-right">
+            <div class="btn-group" role="group">
+                <a type="button" class="btn btn-primary" href="@Url.Action("Edit/"+item.Asset_No)">Edit</a>
+                <form method="post" action="Delete">
+                    <input asp-controller="AssetDetails" onclick="if (!confirm('Are you sure you want to delete this Asset---'+@item.AssetId)) { return false}" type="submit" class="btn btn-danger rounded-0"  asp-action="Delete" asp-route-id="@item.AssetId"  value="Delete"/>
+                </form>
+            </div>
+        </td>*@
+            </tr>
+            }
+        </table>
+    </div>
+
+</div>
+

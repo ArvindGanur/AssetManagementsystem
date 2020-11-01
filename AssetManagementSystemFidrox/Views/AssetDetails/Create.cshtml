@@ -1,0 +1,139 @@
+﻿@model AssetManagementSystemFidrox.Models.AssetDetails
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+
+<h2 class="text-info">Add New Asset Entry</h2>
+<form method="post" action="Create">
+    <div class="form-group row">
+        
+        <div class="col-2">
+            <label asp-for="Asset_No"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_No" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_name"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_name" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_type"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_type" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_model_no"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_model_no" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="AstProcessor"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="AstProcessor" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_OS"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_OS" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_Ram_GB"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_Ram_GB" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_HardDisk_GB"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_HardDisk_GB" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_graphics_crd_GB"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_graphics_crd_GB" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_LicenseKey"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_LicenseKey" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_Mouse"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_Mouse" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_Bag_Name"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_Bag_Name" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_Charger"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_Charger" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_Status"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_Status" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label asp-for="Asset_Remarks"></label>
+        </div>
+        <div class="col-2">
+            <input asp-for="Asset_Remarks" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label hidden asp-for="Asset_purchase_dt"></label>
+        </div>
+        <div class="col-2">
+            <input hidden asp-for="Asset_purchase_dt" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label hidden asp-for="Asset_puch_place"></label>
+        </div>
+        <div class="col-2">
+            <input hidden asp-for="Asset_puch_place" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label hidden asp-for="Asset_price"></label>
+        </div>
+        <div class="col-2">
+            <input hidden asp-for="Asset_price" class="form-group" />
+        </div>
+        <div class="col-2">
+            <label hidden asp-for="Asset_purchase_bill_no"></label>
+        </div>
+        <div class="col-2">
+            <input hidden asp-for="Asset_purchase_bill_no" class="form-group" />
+        </div>
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Create" />
+            <a asp-controller="AssetDetails" asp-action="Index" class="btn btn-success">Back</a>
+        </div>
+
+    </div>
+</form>
+
+
